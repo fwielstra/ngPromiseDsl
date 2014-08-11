@@ -65,21 +65,21 @@ logic (resolves when successful, rejects when failed) to booleans that can be pu
 Calls the given method with the promise value when it resolves, returning the original value.
 Useful for chaining and not having to declare an explicit return for the callback
 
-  promise.thenExec(calculateTotals);
+    promise.thenExec(calculateTotals);
 
 ### thenApply()
 
 Calls the given method (by name) on the object the promise resolves to. Useful in combination with
 Restangular
 
-  promise.thenApply('get', 'sub-resource');
+    promise.thenApply('get', 'sub-resource');
 
 ### thenRedirectTo()
 
 Redirects the user to the given path on success using `$location`, optionally replacing the url.
 
-  promise.thenRedirectTo('/success');
-  promise.thenRedirectTo('/success', true); // calls $location.replace()
+    promise.thenRedirectTo('/success');
+    promise.thenRedirectTo('/success', true); // calls $location.replace()
 
 
 ## TODO
@@ -94,8 +94,8 @@ Redirects the user to the given path on success using `$location`, optionally re
 [http://dorp.io/blog/extending-q-promises.html](Extending Q promises) (dorp.io)
 
 ## Contributors
-[@fwielstra](github.com/fwielstra/)
-[@jbnicolai](https://github.com/jbnicolai)
+ * [@fwielstra](https://github.com/fwielstra)
+ * [@jbnicolai](https://github.com/jbnicolai)
 
 ## License
 
