@@ -29,7 +29,9 @@ angular.module('ngPromiseDsl', [])
         promise.thenSetAll = function (obj) {
           return promise.then(function(values) {
             for (var prop in values) {
-              obj[prop] = values[prop];
+              if (values.hasOwnProperty(prop)) {
+                obj[prop] = values[prop];
+              }
             }
             return values;
           });
