@@ -90,12 +90,13 @@ Redirects the user to the given path on success using `$location`, optionally re
 
 ## Links
 
-[Extending AngularJS services with the decorate method](http://blog.xebia.com/2014/08/08/extending-angularjs-services-with-the-decorate-method/) (blog.xebia.com)
-[http://dorp.io/blog/extending-q-promises.html](Extending Q promises) (dorp.io)
+ * [Extending AngularJS services with the decorate method](http://blog.xebia.com/2014/08/08/extending-angularjs-services-with-the-decorate-method/) (blog.xebia.com)
+ * [Extending Q promises](http://dorp.io/blog/extending-q-promises.html) (dorp.io)
 
 ## Contributors
  * [@fwielstra](https://github.com/fwielstra)
  * [@jbnicolai](https://github.com/jbnicolai)
+ * [@lammertw](https://github.com/lammertw)
 
 ## License
 
