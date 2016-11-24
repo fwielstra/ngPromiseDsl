@@ -84,7 +84,7 @@ Redirects the user to the given path on success using `$location`, optionally re
 
 ## TODO
 
- * Publish on bower / npm repositories
+ * Publish on npm repositories
  * Write installation instructions once there
  * `thenLog(logLevel)` method that calls $log with the promise result or a constant value
 
