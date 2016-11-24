@@ -2,33 +2,32 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        library: grunt.file.readJSON('bower.json'),
         concat: {
             options: {
                 separator: ''
             },
             library: {
                 src: [
-                    'src/<%= library.name %>/<%= library.name %>.prefix',
-                    'src/<%= library.name %>/<%= library.name %>.js',
-                    'src/<%= library.name %>/<%= library.name %>.suffix'
+                    'src/<%= pkg.name %>/<%= pkg.fileName %>.prefix',
+                    'src/<%= pkg.name %>/<%= pkg.fileName %>.js',
+                    'src/<%= pkg.name %>/<%= pkg.fileName %>.suffix'
                 ],
-                dest: 'dist/<%= library.name %>.js'
+                dest: 'dist/<%= pkg.fileName %>.js'
             }
         },
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+                banner: '/*! <%= pkg.fileName %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
             },
             jid: {
                 files: {
-                    'dist/<%= library.name %>.min.js': ['<%= concat.library.dest %>']
+                    'dist/<%= pkg.fileName %>.min.js': ['<%= concat.library.dest %>']
                 }
             }
         },
         jshint: {
             beforeConcat: {
-                src: ['gruntfile.js', '<%= library.name %>/**/*.js']
+                src: ['gruntfile.js', '<%= pkg.fileName %>/**/*.js']
             },
             afterConcat: {
                 src: [

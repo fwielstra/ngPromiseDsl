@@ -1,5 +1,6 @@
 {
-  "name": "ngpromisedsl",
+  "name": "ng-promise-dsl",
+  "fileName": "ng-promise-dsl",
   "version": "0.0.0",
   "dependencies": {
     "angular": "1.2.21"
