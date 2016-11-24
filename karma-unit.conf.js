@@ -8,13 +8,13 @@ module.exports = function(config) {
 
         plugins: [
             'karma-jasmine',
-            'karma-chrome-launcher'
+            'karma-phantomjs-launcher'
         ],
 
         // list of files / patterns to load in the browser
         files: [
-            'bower_components/angular/angular.js',
-            'bower_components/angular-mocks/angular-mocks.js',
+            'node_modules/angular/lib/angular.js',
+            'node_modules/angular-mocks/angular-mocks.js',
             'src/ngPromiseDsl/ngPromiseDsl.js',
             'test/unit/**/*.js'
         ],
@@ -58,7 +58,7 @@ module.exports = function(config) {
         // - Safari (only Mac)
         // - PhantomJS
         // - IE (only Windows)
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
 
 
         // If browser does not capture in given timeout [ms], kill it

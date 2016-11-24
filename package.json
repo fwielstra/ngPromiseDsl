@@ -1,20 +1,31 @@
 {
-    "name": "ngpromisedsl",
-    "version": "0.0.0",
-    "dependencies": {},
-    "devDependencies": {
-        "grunt": "0.4.5",
-        "grunt-contrib-copy": "0.4.1",
-        "grunt-contrib-concat": "0.3.0",
-        "grunt-contrib-uglify": "0.2.0",
-        "grunt-contrib-jshint": "0.8.0",
-        "grunt-contrib-clean": "0.4.1",
-        "grunt-contrib-watch": "0.4.0",
-        "grunt-rev": "0.1.0",
-        "grunt-karma": "0.7.2",
-        "grunt-ngmin": "0.0.2"
-    },
-    "engines": {
-        "node": ">=0.8.0"
-    }
+  "name": "ng-promise-dsl",
+  "fileName": "ng-promise-dsl",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "1.2.21"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.21",
+    "grunt": "0.4.5",
+    "grunt-contrib-clean": "0.4.1",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-copy": "0.4.1",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-contrib-uglify": "0.2.0",
+    "grunt-contrib-watch": "0.4.0",
+    "grunt-karma": "2.0.0",
+    "grunt-ngmin": "0.0.2",
+    "grunt-rev": "0.1.0",
+    "jasmine-core": "2.5.2",
+    "karma": "1.3.0",
+    "karma-jasmine": "1.0.2",
+    "karma-phantomjs-launcher": "1.0.2"
+  },
+  "scripts": {
+    "prepublish": "grunt"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  }
 }
