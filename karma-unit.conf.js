@@ -15,6 +15,7 @@ module.exports = function(config) {
         files: [
             'node_modules/angular/lib/angular.js',
             'node_modules/angular-mocks/angular-mocks.js',
+            'node_modules/underscore/underscore.js',
             'src/ngPromiseDsl/ngPromiseDsl.js',
             'test/unit/**/*.js'
         ],
